@@ -4,8 +4,8 @@
     <ShouldIncludeNativeSkiaSharp>false</ShouldIncludeNativeSkiaSharp>
     <AssemblyName>Artemis.Plugins.LayerBrushes.Hotbar</AssemblyName>
     <RootNamespace>Artemis.Plugins.LayerBrushes.Hotbar</RootNamespace>
-    <UseWPF>true</UseWPF>
     <Platforms>x64</Platforms>
+	<UseWPF>true</UseWPF>
     <GenerateDependencyFile>False</GenerateDependencyFile>
     <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
     <CopyLocalLockFileAssemblies>True</CopyLocalLockFileAssemblies>

@@ -1,10 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
     <ShouldIncludeNativeSkiaSharp>false</ShouldIncludeNativeSkiaSharp>
     <AssemblyName>Artemis.Plugins.DataModelExpansions.Profiles</AssemblyName>
     <RootNamespace>Artemis.Plugins.DataModelExpansions.Profiles</RootNamespace>
-    <UseWPF>true</UseWPF>
+    <UseWPF>false</UseWPF>
     <Platforms>x64</Platforms>
     <GenerateDependencyFile>False</GenerateDependencyFile>
     <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
@@ -27,14 +27,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Properties\Settings.Designer.cs">
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
     <None Update="Lib\MultiMonitorHelper.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -43,10 +35,6 @@
     </None>
     <None Update="Profiles.svg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
 
