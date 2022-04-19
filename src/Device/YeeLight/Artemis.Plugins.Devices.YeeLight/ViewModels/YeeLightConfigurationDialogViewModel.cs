@@ -8,7 +8,7 @@ using RGB.NET.Devices.YeeLight;
 using RGB.NET.Devices.YeeLight.Enums;
 using Stylet;
 
-namespace Artemis.Plugins.Devices.YeeLight.ViewModels
+namespace Artemis.Plugins.Devices.YeeLight
 {
 
     public class YeeLightConfigurationDialogViewModel : PluginConfigurationViewModel
