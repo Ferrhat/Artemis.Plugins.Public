@@ -9,11 +9,13 @@ namespace RGB.NET.Devices.YeeLight.PerDevice
     public class YeeLightUpdateQueue : UpdateQueue
     {
         private readonly Device _light;
+        private readonly ILogger _logger;
 
-        public YeeLightUpdateQueue(IDeviceUpdateTrigger updateTrigger, Device light)
+        public YeeLightUpdateQueue(IDeviceUpdateTrigger updateTrigger, Device light, ILogger logger)
             : base(updateTrigger)
         {
             _light = light;
+            _logger = logger;
             Timer connectTimer = new Timer(1000);
             connectTimer.Elapsed += _connectTimer_Elapsed;
             connectTimer.Start();
@@ -35,6 +37,7 @@ namespace RGB.NET.Devices.YeeLight.PerDevice
             }
 
             var color = dataSet[0].color;
+            _logger.Warning($"Set Color {color}");
             SetColor(color);
         }
 
