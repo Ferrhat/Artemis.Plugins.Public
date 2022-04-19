@@ -1,4 +1,6 @@
-﻿using System;
+using Artemis.Core;
+using Serilog;
+using System;
 using System.Threading.Tasks;
 using System.Timers;
 using RGB.NET.Core;
