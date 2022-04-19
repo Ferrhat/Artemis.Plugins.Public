@@ -1,5 +1,4 @@
 ﻿using Artemis.Core;
-using Artemis.Plugins.Devices.YeeLight.ViewModels;
 using Artemis.UI.Shared;
 
 namespace Artemis.Plugins.Devices.YeeLight
